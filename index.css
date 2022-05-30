@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Noto Sans TC';
+}
+
+.header {
+    width: 100%;
+    padding-bottom: 117px;
+    background-image: url("image/bg_home.svg");
+    background-size: 60vw;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+}
+
+.header>img {
+    height: 360px;
+    width: auto;
+    position: absolute;
+    bottom: -180px;
+    left: -180px;
+}
+
+.navbar {
+    display: flex;
+    padding: 24px 139px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar p>a {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF5D50;
+    padding: 8px 32px;
+    border-radius: 24px;
+}
+
+.navbar p>a:hover {
+    color: #FF5D50;
+    background-color: #fff;
+    border: #FF5D50 1px solid;
+}
+
+.banner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 30px 139px 0 139px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.banner-text h6{
+    color: #56C4C5;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.banner-text h1 {
+    color: #221E1F;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.banner-text p {
+    color: #221E1F;
+    font-size: 20px;
+}
+
+.banner img {
+    max-width: 532px;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-bottom: 32px;
+        background-size: 80%;
+        background-image: url("image/bg_home_sm.svg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .header>img {
+        display: none;
+    }
+    
+    .navbar {
+        padding: 24px 12px;
+        justify-content: space-around;
+    }
+
+    .banner {
+        margin: 30px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .header {
+        padding-bottom: 32px;
+        background-image: url("image/bg_home_sm.svg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .navbar {
+        padding: 16px 20px;
+        border-bottom: 2px solid #FFD153;
+        justify-content: space-between;
+    }
+
+    .navbar img {
+        height: 24px;
+        width: auto;
+    }
+
+    .banner {
+        margin: 30px 20px 0 20px;
+    }
+
+    .banner-text h6{
+        font-size: 16px;
+    }
+
+    .banner-text h1 {
+        font-size: 32px;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+    }
+}
