@@ -70,6 +70,7 @@ body {
     font-family: 'Noto Sans TC';
 }
 
+/* header */
 .header {
     width: 100%;
     padding-bottom: 117px;
@@ -85,7 +86,7 @@ body {
     width: auto;
     position: absolute;
     bottom: -180px;
-    left: -180px;
+    left: -222px;
 }
 
 .navbar {
@@ -152,8 +153,61 @@ body {
     max-width: 532px;
     width: 50%;
 }
+/* header */
+
+/* container */
+.platforms {
+    text-align: center;
+    margin: 100px auto;
+    padding: 0 139px;
+}
+
+.platforms h2 {
+    color: #221E1F;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 48px;
+}
+
+.platforms h3 {
+    color: #221E1F;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 24px 0;
+}
+
+.platforms p {
+    color: #747474;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.platforms img {
+    max-width: 40%;
+}
+
+.platform-items ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.platform-items li {
+    width: 240px;
+    margin: 24px;
+    text-align: center;
+    padding: 0;
+}
+
+
+/* container */
 
 @media (max-width: 768px) {
+    /* header */
     .header {
         padding-bottom: 32px;
         background-size: 80%;
@@ -163,7 +217,9 @@ body {
     }
 
     .header>img {
-        display: none;
+        height: 280px;
+        left: -168px;
+        bottom: -420px;
     }
     
     .navbar {
@@ -182,14 +238,36 @@ body {
     .banner img {
         width: 100%;
     }
+    /* header */
+
+    /* container */
+    .platforms {
+        padding: 0 100px;
+    }
+
+    .platforms h2 {
+        font-size: 28px;
+    }
+    
+    .platform-items ul {
+        flex-wrap: wrap;
+    }
+
+
+    /* container */
 }
 
 @media (max-width: 375px) {
+    /* header */
     .header {
         padding-bottom: 32px;
         background-image: url("image/bg_home_sm.svg");
         background-repeat: no-repeat;
         background-position: bottom center;
+    }
+
+    .header>img {
+        display: none;
     }
 
     .navbar {
@@ -218,4 +296,22 @@ body {
     .banner-text p {
         font-size: 16px;
     }
+    /* header */
+    
+    /* container */
+    .platforms {
+        background-image: url("image/ball01.svg");
+        background-repeat: no-repeat;
+        background-size: 126px;
+        background-position: -77px 15px;
+    }
+    .platforms {
+        padding: 0 60px;
+    }
+    
+    .platforms h3 {
+        font-size: 18px;
+    }
+
+    /* container */
 }
